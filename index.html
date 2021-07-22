@@ -1,0 +1,29 @@
+<!DOCTYPE html>     <!-- html文書であることを示す -->
+<html>
+    <head>          <!-- webページに表示する内容以外の事を指定する -->
+        <meta charset="UTF-8">                                  <!-- 文字コードを指定 -->
+        <meta name="viewpoint" content="width=device-width">    <!-- スマホでも縮小せずに表示する -->
+        <title>入会申し込み</title>                              <!-- タブに表示されるタイトル -->
+        
+        <!-- cssファイルを参照する -->
+        <link rel="stylesheet" href="css/style.css">
+    </head>
+
+    <body>          <!-- 表示される内容 -->
+        <div class="content">
+            <h1>入会お申込み</h1>
+            <p>入会するには、次のフォームに必要事項をご記入ください。</p>
+            <div class="control">
+                <label for="mymail">メールアドレス <span class="required">必須</span></label>
+                <input id="mymail" type="email" name="mymail">
+            </div>
+            <div class="control">
+                <label for="passcode">パスワード <span class="required">必須</span></label>    <!-- label: 文字をフォームと関連付ける -->
+                <input id="passcode" type="password" name="passcode">
+            </div>
+            <div class="control">
+                <button type="submit">登録する</button>
+            </div>
+        </div>
+    </body>
+</html>

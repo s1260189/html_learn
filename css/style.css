@@ -1,0 +1,55 @@
+@import url(sanitize.css);  /* 別のcssをインポート */
+
+h1 {
+    font-size: 24px;
+    margin: 0;              /* 0なら単位を省略できる */
+}
+
+.content {                  /* .を付けるとタグの種類を問わずクラスを対象 */
+    background-color:  #fff;
+    width: 600px;
+    margin: 10px auto;            /* auto: ブラウザの真ん中に来るように調整してくれる */
+    border: 1px solid #d1d1d1;  /* border: 枠線を引く */      
+    padding: 30px;                /* padding: 要素の中のmargin */
+}
+
+.control {
+    margin-bottom: 3em;
+}
+
+.required {
+    margin-left: .3em;      /* 0.3倍 */
+    color: #f33;        /* 文字色 */
+    font-size: .9em;
+    padding: 3px;
+    background-color: #fee;
+    font-weight: bold;
+}
+
+body {
+    background-color: #fafafa;
+}
+
+label {
+    display: block;
+    margin-bottom: .5em;
+}
+
+input {
+    border: 0;      /* borderを全部消してから、下線のみ敷いている */
+    border-bottom: 1px solid #d1d1d1;
+    font-size: 1.2em;       /* 1.2倍 */
+    width: 100%;
+    padding: 8px;
+}
+
+button {
+    border: 0;
+    width: 100%;
+    background-color: #2096F3;
+    color: #fff;
+    padding: 15px;
+    border-radius: 3px;     /* 角に丸みを持たせる */
+    box-shadow:0 0 8px rgba(0,0,0,.4);      /* 縁にぼかしをかける */
+    
+}
