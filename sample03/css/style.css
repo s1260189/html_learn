@@ -1,0 +1,119 @@
+@import url(sanitize.css);  /* 別のcssをインポート */
+@import url('https://fonts.googleapis.com/css2?family=Sriracha&display=swap');  /* webフォント */
+
+body {
+    background-color: #f0f0f0;  /* 背景色をグレーに */
+    padding: 10px;  /* 要素内の余白を10pxに */
+    font-size: 14px;    /* 文字の大きさを14pxに */
+    color: #666;     /* 文字の色を濃い目のグレーに */
+}
+
+.container {
+    max-width: 800px;   /* 最大幅を800pxに */
+    margin: 0 auto; /* 左右の余白を0にして、左右中央揃えに */
+    box-shadow: 0 0 10px rgba(0, 0, 0, .3); /* 影を付ける */
+}
+
+header {
+    background-color: #422814;
+    padding: 10px;
+    color: #fff;
+}
+
+header h1 {
+    font-family: 'Sriracha', cursive;   /* importしたwebフォントを利用 */
+    margin: 0;
+    font-size: 24px;
+    font-weight: normal;    /* 文字の太さを太くしない */
+    text-align: center; /*テキストを中央揃えに */
+}
+.content {
+    background-color: #fff;
+    padding: 20px;
+}
+
+.description {
+    clear: left;
+}
+
+.description img {
+    float: left;    /* 回り込みをする */
+    margin: 0 10px 10px 0;  /* 右と下に余白10px */
+    transition-property: opacity;   /* 対象となるcssプロパティ(今回は不透明度の変化) */
+    transition-duration: 1s;    /* トランジションにかける時間 */
+    transition-timing-function: ease;   /* トランジションの処理 */
+    transition-delay: 0s;   /* トランジションの開始を遅らせる */
+}
+
+.description img:hover {
+    opacity: .5;    /* 不透明度を調整 */
+}
+
+.information h1 {
+    font-size: 18px;
+    margin: 0 10px 10px 0;
+    float: left;
+}
+
+.information .type {
+    display: inline; /* インラインスタイルに変更 */
+    background-color: #E35A4D;
+    padding: 3px 5px;
+    font-size: 80%;
+    color: #fff;
+}
+
+.songs h2 {
+    clear: left;    /* 紹介文の画像まわり込み解除 */
+    font-size: 100%;
+    font-weight: normal;
+    margin: 0;
+    background-color: #E6E4DD;
+    padding: 5px 10px;
+}
+
+.songs ol {
+    padding: 0;
+    margin: 0;
+    list-style: decimai inside; /* リストのスタイルを算用数字に */
+}
+
+.songs li {
+    border-bottom: 1px solid #ccc;
+    width: 50%;
+    float: left;
+    padding: 5px 10px;
+}
+
+.clearfix:after{    /* 疑似空白を追加することで背景の描画を正しくする */
+    content: " ";
+    display: table;
+    clear: both;
+}
+
+a {
+    color: #666;
+}
+
+footer {
+    text-align: center;
+    font-size: 80%;
+}
+
+@media only screen and (max-width:600px){
+    .description img{
+        float: none;    /* 回り込みを解除 */
+        display: block;
+        margin: 0 auto;
+    }
+    header {
+        padding: 5px;   /* 余白内要素を少し狭くする */
+    }
+    header h1 {
+        font-size: 12px;
+    }
+    .songs li {
+        float: none;
+        width: inherit;     /* 幅を元に戻す */
+    }
+}
